@@ -68,3 +68,19 @@
         margin-left: 30px;
     }
 }
+
+.fade-in {
+    opacity: 0; /* начальное значение непрозрачности */
+    animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 4s; /* длительность анимации в 1 секунду */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
